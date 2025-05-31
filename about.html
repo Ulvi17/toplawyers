@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TopLawyers - Our Mission</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#64748B'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">
+                        <a href="index.html" class="hover:text-primary transition-colors">TopLawyers</a>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary">Find Lawyers</a>
+                    <a href="about.html" class="text-primary font-medium">About</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary">Contact</a>
+                </nav>
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2 rounded-md text-gray-700 hover:text-primary" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden md:hidden border-t pt-4 pb-3">
+                <div class="space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Find Lawyers</a>
+                    <a href="about.html" class="block px-3 py-2 text-primary font-medium">About</a>
+                    <a href="index.html#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Hero Section -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                About TopLawyers
+            </h1>
+            <div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Making Azerbaijan's legal landscape transparent, accessible, and user-friendly for everyone.
+            </p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="prose prose-lg max-w-none">
+            <!-- Mission Section -->
+            <section class="bg-white rounded-lg shadow-sm p-8 mb-12">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900">Our Mission</h2>
+                </div>
+                <div class="text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        TopLawyers is a public, curated directory built to ease one of the most frustrating problems in Azerbaijan—finding a reliable, qualified lawyer.
+                    </p>
+                    <p>
+                        For locals, the search is already complex. For foreigners and international companies, it can be nearly impossible without local knowledge or trusted referrals. That's why TopLawyers exists: to make the legal landscape more transparent, accessible, and user-friendly for everyone.
+                    </p>
+                    <p>
+                        The platform showcases a range of independent lawyers, legal consultants, and law firms who are ready to assist with matters from corporate structuring and tax to family law and immigration. Every listing is selected with care, helping ensure that what you find here is not just a name, but a professional worth your trust.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-primary p-4 my-6">
+                        <p class="text-primary font-semibold">
+                            <i class="fas fa-gift mr-2"></i>
+                            It's completely free for users to explore the directory and contact any listed professional directly—no logins, no commissions, no hidden steps.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How to Use Section -->
+            <section class="bg-white rounded-lg shadow-sm p-8 mb-12">
+                <div class="flex items-center mb-8">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-compass text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900">How to Use the Platform</h2>
+                </div>
+
+                <!-- For Clients -->
+                <div class="mb-10">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-users text-primary mr-3"></i>
+                        For Clients:
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <i class="fas fa-eye text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Browse</h4>
+                                    <p class="text-gray-600">Instantly access a growing list of real legal professionals</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <i class="fas fa-search text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Search</h4>
+                                    <p class="text-gray-600">Look up by name, area of law, or type of practice</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <i class="fas fa-filter text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Filter</h4>
+                                    <p class="text-gray-600">Narrow down your results using filters like:</p>
+                                    <ul class="text-sm text-gray-500 mt-1 ml-4">
+                                        <li>• Type of legal provider</li>
+                                        <li>• Years of experience</li>
+                                        <li>• Languages spoken</li>
+                                        <li>• Practice areas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <i class="fas fa-id-card text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">View Profiles</h4>
+                                    <p class="text-gray-600">Open any profile to see detailed info including services and contact details</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <i class="fas fa-phone text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Contact</h4>
+                                    <p class="text-gray-600">Reach out directly—no intermediaries involved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Legal Professionals -->
+                <div class="border-t pt-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-gavel text-primary mr-3"></i>
+                        For Legal Professionals:
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <p class="text-sm text-gray-700">Scroll to the bottom of the homepage</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <p class="text-sm text-gray-700">Fill out the "Submit Services" form</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <p class="text-sm text-gray-700">Provide your background and specialties</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <p class="text-sm text-gray-700">Submit for review and listing</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- From the Creator Section -->
+            <section class="bg-gradient-to-r from-primary to-blue-600 rounded-lg shadow-lg p-8 text-white">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-user text-primary text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold">From the Creator</h2>
+                </div>
+                <div class="space-y-4 text-blue-50">
+                    <p>
+                        TopLawyers is developed and maintained by <strong class="text-white">Ulvi Aliyev</strong>, a legal strategist and startup advisor with years of experience across law and tech.
+                    </p>
+                    <p>
+                        The goal behind the platform is not just to simplify access to legal help, but to raise the overall standard of how legal services are found and trusted—especially in a region where finding the right expert often comes down to chance.
+                    </p>
+                </div>
+                <div class="mt-8 pt-6 border-t border-blue-400">
+                    <a href="index.html" class="inline-flex items-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Start Finding Lawyers
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">TopLawyers</h3>
+                    <p class="text-gray-400">Making Azerbaijan's legal landscape transparent and accessible for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">For Clients</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Find a Lawyer</a></li>
+                        <li><a href="index.html#practice-areas" class="hover:text-white">Practice Areas</a></li>
+                        <li><a href="about.html" class="hover:text-white">How It Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">For Lawyers</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#submit" class="hover:text-white">Join Platform</a></li>
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 TopLawyers. All rights reserved. | Platform designed for legal professionals and clients.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html> 
